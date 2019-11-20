@@ -105,7 +105,7 @@ Patterns can contain repetitions.  These allow a sequence of tokens to be matche
 * `$` is a literal dollar token.
 * `( ... )` is the paren-grouped pattern being repeated.
 * `sep` is an *optional* separator token.  Common examples are `,`, and `;`.
-* `rep` is the *required* repeat control.  Currently, this can be *either* `*` (indicating zero or more repeats) or `+` (indicating one or more repeats).  You cannot write "zero or one" or any other more specific counts or ranges.
+* `rep` is the *required* repeat control.  Currently, this can be *either* `*` (indicating zero or more repeats), a `+` (indicating one or more repeats) or `?` (an optional repeat.  You cannot write any other more specific counts or ranges.
 
 Repetitions can contain any other valid pattern, including literal token trees, captures, and other repetitions.
 
